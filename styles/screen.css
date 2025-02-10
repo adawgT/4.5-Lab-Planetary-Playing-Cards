@@ -48,3 +48,29 @@ h1 strong {
 img.about {
     opacity: 0.5;
 }
+
+:root {
+    --sun-color: #ffcc00;
+    --mercury-color: #b3b3b3;
+    --earth-color: #2a7db1;
+    --circle-size: 100px;
+  }
+
+  .circle {
+    width: var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 50%;
+    background: var(--sun-color); /* Change this for each planet */
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
