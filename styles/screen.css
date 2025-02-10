@@ -99,3 +99,9 @@
     }
   }
   
+  @media (max-width: 768px) {
+    .grid-container {
+      gap: 30px;
+    }
+  }
+  
